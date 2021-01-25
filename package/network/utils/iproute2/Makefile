@@ -45,11 +45,11 @@ endef
 
 define Package/ip-full
 $(call Package/iproute2/Default)
- TITLE:=Routing control utility (Full)
- VARIANT:=full
- PROVIDES:=ip
- ALTERNATIVES:=300:/sbin/ip:/usr/libexec/ip-full
- DEPENDS:=+libnl-tiny +libelf +libcap +(PACKAGE_devlink||PACKAGE_rdma):libml
+TITLE:=Routing control utility (Full)
+VARIANT:=full
+PROVIDES:=ip
+ALTERNATIVES:=300:/sbin/ip:/usr/libexec/ip-full
+DEPENDS:=+libnl-tiny +libelf +libcap +(PACKAGE_devlink||PACKAGE_rdma):libml
 endef
 
 define Package/tc
